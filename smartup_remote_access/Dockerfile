@@ -5,7 +5,7 @@ ARG BUILD_ARCH
 
 ENV FRP_VERSION=0.68.0
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 RUN \
     case "${BUILD_ARCH}" in \
