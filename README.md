@@ -1,3 +1,5 @@
+![SmartUP Logo](logo.png)
+
 # SmartUP Remote Access Add-ons
 
 This repository contains a custom Home Assistant add-on:
