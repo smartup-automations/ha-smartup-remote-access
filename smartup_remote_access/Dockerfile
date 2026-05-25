@@ -1,5 +1,7 @@
+ARG BUILD_FROM
+FROM ${BUILD_FROM}
+
 ARG BUILD_ARCH
-FROM ghcr.io/home-assistant/${BUILD_ARCH}-base:3.22
 
 ENV FRP_VERSION=0.68.0
 
