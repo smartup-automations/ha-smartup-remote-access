@@ -1,0 +1,44 @@
+name: Smartup AutoSSH
+version: 0.1.0
+slug: smartup_autossh
+description: >-
+  Reverse tunnel Home Assistant services over TCP and UDP using FRP.
+url: https://github.com/smartup-automations/ha-smartup-autossh-addon
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+  - i386
+startup: application
+boot: auto
+init: false
+advanced: true
+stage: experimental
+homeassistant: 2024.1.0
+options:
+  server_host: ""
+  server_port: 7000
+  auth_token: ""
+  transport_tls: true
+  user: "smartup"
+  remote_ui_port: 8123
+  local_ui_host: "home-assistant"
+  local_ui_port: 8123
+  tcp_forwarding: []
+  udp_forwarding: []
+  log_level: "info"
+schema:
+  server_host: str
+  server_port: port
+  auth_token: password
+  transport_tls: bool
+  user: str
+  remote_ui_port: port
+  local_ui_host: str
+  local_ui_port: port
+  tcp_forwarding:
+    - str
+  udp_forwarding:
+    - str
+  log_level: list(trace|debug|info|warn|error)
