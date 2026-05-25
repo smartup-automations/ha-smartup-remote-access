@@ -1,9 +1,9 @@
-# Home Assistant Add-on: Smartup AutoSSH
+# Home Assistant Add-on: SmartUP Remote Access
 
 **Reverse tunnel Home Assistant services over both TCP and UDP.**
 
-This add-on is designed for sites behind NAT where you cannot port-forward locally.  
-It is branded as **Smartup AutoSSH** to preserve the familiar workflow from the original AutoSSH add-on, but it uses **FRP** under the hood because plain SSH port forwarding is TCP-only and is not the right transport for UDP services such as KNX/IP on port `3671/udp`.
+This add-on is designed for sites behind NAT where you cannot port-forward locally.
+It is branded as **SmartUP Remote Access** and uses **FRP** under the hood because plain SSH port forwarding is TCP-only and is not the right transport for UDP services such as KNX/IP on port `3671/udp`.
 
 ## What this add-on changes
 
@@ -20,7 +20,7 @@ Your public VPS must run an **FRP server** (`frps`), not just `sshd`.
 
 ## Quick Start
 
-1. Install `Smartup AutoSSH`.
+1. Install `SmartUP Remote Access`.
 2. Prepare an `frps` server on your VPS.
 3. Set `server_host`, `server_port`, and `auth_token`.
 4. Set `remote_ui_port` for the Home Assistant UI.

@@ -79,7 +79,7 @@ for spec in $(bashio::config 'udp_forwarding|join(" ")'); do
     add_proxy "udp" "${spec}"
 done
 
-bashio::log.info "Starting Smartup AutoSSH"
+bashio::log.info "Starting SmartUP Remote Access"
 bashio::log.info "Primary UI remote port: ${remote_ui_port}/tcp"
 bashio::log.info "Generated FRP client configuration:"
 sed 's/token = ".*/token = "[redacted]"/' "${CONFIG_FILE}" | while IFS= read -r line; do
