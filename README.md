@@ -10,4 +10,4 @@ The add-on is branded as **SmartUP Remote Access** and uses **FRP** under the ho
 
 Repository:
 
-- [smartup-automations/ha-smartup-autossh-addon](https://github.com/smartup-automations/ha-smartup-autossh-addon)
+- [smartup-automations/ha-smartup-remote-access](https://github.com/smartup-automations/ha-smartup-remote-access)

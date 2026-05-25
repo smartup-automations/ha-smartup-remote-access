@@ -3,7 +3,7 @@ version: 0.1.0
 slug: smartup_remote_access
 description: >-
   Reverse tunnel Home Assistant services over TCP and UDP using FRP.
-url: https://github.com/smartup-automations/ha-smartup-autossh-addon
+url: https://github.com/smartup-automations/ha-smartup-remote-access
 arch:
   - amd64
   - aarch64
